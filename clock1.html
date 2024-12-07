@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 40px;
+        } */
+        body {
+            background-color: rgb(212, 226, 253);
+            background: rgba(0, 0, 0, 0.8);
+            background-image: url("clock-407101_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #clock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 350px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #clock2 {
+            background-color: rgb(6, 6, 67, 0.63);
+            color: white;
+            border-radius: 20px;
+            padding: 20px 20px;
+            /* border-radius: 20px; */
+            height: 50px;
+            width: 330px;
+            box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+            /* margin: auto; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* margin-top: 400px; */
+            letter-spacing: 6px;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="are">We are coming Soon</h1>
+    <div id="clock">
+        <div id="clock2"></div>
+    </div>
+
+    <script>
+        let time = document.getElementById("clock2");
+        setInterval(() => {
+            let date = new Date();
+            time.innerHTML = date.toLocaleTimeString();
+
+        });
+        // console.log(time);
+
+
+    </script>
+</body>
+
+</html>
